@@ -1,17 +1,19 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
+  <ion-toolbar color="primary">
+    <ion-title align="center">
+      Botón de Pánico
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <div class ="round" div align="center">
+    
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <p>Lat:{{lat}},Lng:{{lng}}</p>
+    
+    <ion-button expand="full" fill="clear" size = "large" style="font-size:70px"(click)="whereiam()">
+      <ion-icon name="alert-circle" style="font-size:200px;color:#FF5757"></ion-icon></ion-button>
+    <p>Presiona este botón en caso de estar en peligro, este botón enviará tu ubicación a carabineros y los llamará de ser necesario.</p>
+  </div>
 </ion-content>

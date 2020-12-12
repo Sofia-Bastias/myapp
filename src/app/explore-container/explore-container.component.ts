@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 
+
 @Component({
   selector: 'app-explore-container',
   templateUrl: './explore-container.component.html',
@@ -7,8 +8,6 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ExploreContainerComponent implements OnInit {
   @Input() name: string;
-
-  constructor() { }
 
   ngOnInit() {}
 
