@@ -12,7 +12,7 @@
 
     <p>Lat:{{lat}},Lng:{{lng}}</p>
     
-    <ion-button expand="full" fill="clear" size = "large" style="font-size:70px"(click)="whereiam()">
+    <ion-button expand="full" fill="clear" size = "large" style="font-size:70px"(click)="whereiam()"(click)="callSupport"(click)="registerNotification(3)">
       <ion-icon name="alert-circle" style="font-size:200px;color:#FF5757"></ion-icon></ion-button>
     <p>Presiona este botón en caso de estar en peligro, este botón enviará tu ubicación a carabineros y los llamará de ser necesario.</p>
   </div>

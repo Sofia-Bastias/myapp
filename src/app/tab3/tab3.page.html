@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
       Tab 3
@@ -7,6 +7,10 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  
+  <ion-button (click)="registerNotification(3)"(click)="callSupport">Notificación</ion-button>
+  <ion-button (click)="callSupport"(click)="registerNotification(3)" expand="full" fill="clear" size = "large" style="font-size:30px">
+    <ion-icon name="call" style="font-size:100px;color:#FF5757"></ion-icon></ion-button>
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Tab 3</ion-title>
